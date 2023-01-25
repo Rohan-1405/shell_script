@@ -1,0 +1,8 @@
+echo -n "Enter value of p : "
+read p
+echo -n "Enter value of r : "
+read r
+echo -n "Enter value of n : "
+read n
+a=`expr $p \* $r \* $n / 100`
+echo "Simple intrest : " $a

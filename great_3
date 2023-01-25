@@ -1,0 +1,16 @@
+echo -n "Enter value of a :"
+read a
+echo -n "Enter value of b :"
+read b
+echo -n "Enter value of c :"
+read c
+if [ $a -gt $b -a $a -gt $c ]
+then
+	echo "a is greatest of 3 : " $a
+elif [ $b -gt $a -a $b -gt $c ]
+then
+	echo "b is greatest of 3 : " $b
+else
+	echo "c is greatest of 3 : " $c
+fi
+
