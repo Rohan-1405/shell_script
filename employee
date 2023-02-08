@@ -1,0 +1,12 @@
+read -p "Enter basic salary : " sal
+read -p "Enter DA in percentage : " da
+read -p "Enter TA in percentage : " ta
+read -p "Enter HRA in percentage : " hra
+read -p "Enter PF in percentage : " pf
+da=`expr $da \* $sal / 100`
+ta=`expr $ta \* $sal / 100`
+hra=`expr $hra \* $sal / 100`
+pf=`expr $pf \* $sal / 100`
+
+sum=$((sal+da+ta+hra-pf))
+echo "Net Salary :$num"

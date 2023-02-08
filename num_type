@@ -1,0 +1,10 @@
+read -p "Enter number : " n
+if [ $n -gt 0 ]
+then
+echo "$n is positive.."
+elif [ $n -lt 0 ]
+then 
+echo "$n is Negative.."
+else 
+echo "Number is zero.."
+fi
