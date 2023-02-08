@@ -1,12 +1,12 @@
 read -p "Enter number 1 :" a
 read -p "Enter number 2 :" b
-echo "1.Addition\n2.Subtraction\n3.Multiply\n4.Division\n5.modulus\n"
+printf "1.Addition\n2.Subtraction\n3.Multiply\n4.Division\n5.modulus\n"
 read exp
 case $exp in
-1)echo "$a + $b" $((a+b));;
-2)echo "$a - $b" $((a-b));;
-3)echo "$a * $b" $((a*b));;
-4)echo "$a / $b" $((a/b));;
-5)echo "$a % $b" $((a%b));;
+1)echo "$a + $b =" $((a+b));;
+2)echo "$a - $b =" $((a-b));;
+3)echo "$a * $b =" $((a*b));;
+4)echo "$a / $b =" $((a/b));;
+5)echo "$a % $b =" $((a%b));;
 *)echo "Invalid Input";;
 esac

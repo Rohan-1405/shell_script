@@ -9,4 +9,4 @@ hra=`expr $hra \* $sal / 100`
 pf=`expr $pf \* $sal / 100`
 
 sum=$((sal+da+ta+hra-pf))
-echo "Net Salary :$num"
+echo "Net Salary :$sum"

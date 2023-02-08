@@ -1,0 +1,34 @@
+read -p "Enter marks of sub 1 : " s1
+read -p "Enter marks of sub 2 : " s2
+read -p "Enter marks of sub 3 : " s3
+read -p "Enter marks of sub 4 : " s4
+read -p "Enter marks of sub 5 : " s5
+total=$(($s1+$s2+$s3+$s4+$s5))
+per=`expr $total / 5`
+if [ $s1 -gt 40 -a $s2 -gt 40 -a $s3 -gt 40 -a $s4 -gt 40 -a $s5 -gt 40 ]
+then 
+    res="pass"
+    if [ $per -gt 70 ]
+    then 
+        grade="Dist"
+    elif [ $per -gt 60 ]
+    then 
+      grade="First class"
+    elif [ $per -gt 50 ]
+    then 
+       grade="Second class"
+    elif [ $per -gt 40 ]
+    then 
+        grade="pass"
+    fi
+else
+    grade="Fail"
+fi
+echo "Sub 1 : $s1"
+echo "Sub 2 : $s2"
+echo "Sub 3 : $s3"
+echo "Sub 4 : $s4"
+echo "Sub 5 : $s5"
+echo "Total : $total"
+echo "Percentage : $per"
+echo "Grade : $grade"
