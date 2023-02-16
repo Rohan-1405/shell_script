@@ -1,0 +1,3 @@
+read -p "Enter any no : " n
+c=$(echo "obase=16;$n" | bc)
+echo hexadecimal $c

@@ -1,0 +1,3 @@
+read -p "Enter no : " n
+c=$(echo "obase=2;$n" | bc)
+echo Binary $c
